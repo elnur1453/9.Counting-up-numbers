@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h3 class="counter">10</h3>
+    <br>
+    <h3 class="counter">100</h3>
+    <br>
+    <h3 class="counter">1000</h3>
+    <!-- Buradakı counter class-ı qarşısında yazılan rəqəmlər artırlar.
+         Diqqət edək ki, əgər rəqəm yanında hər hansı bir  hərf və ya işarə olarsa ekranda NaN yazılacaq.
+         Əgər rəqəm yanında nəsə yazmaq istəsək bunu məsələn span teqi daxilində yaza bilərik. -->
+
+</body>
+</html>
+
+<!-- Əsas linklər. Bunlar mütləq burada paylaşılmalıdır. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
+<script>
+    $('.counter').counterUp({
+        delay: 100, //X millisaniyədə hər rəqəm artsın. 1 saniyə = 1000millisaniyə
+        time: 5000 //Neçə saniyədə bitməsini istəsək burada yazırıq. 1 saniyə = 1000
+    });
+</script>
+
+
+</html>
